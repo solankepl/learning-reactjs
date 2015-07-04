@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>My First Reachjs Component</title>
+</head>
+<body>
+
+	<div id="first-react-component"></div>
+
+	<script type="text/javascript" src="../libs/reactjs.min.js"></script>
+	<script type="text/javascript" src="../libs/JSXTransformer.js"></script>
+
+	<script type="text/jsx">
+		var MyFirstComponent = React.createClass({
+			render: function() {
+				return <div>My First Reachjs Component</div>
+			}
+		});
+
+		// React.render(<MyFirstComponent />, document.getElementById('first-react-component'));
+
+		React.render(<div>
+						<MyFirstComponent /> 
+						<MyFirstComponent /> 
+						<MyFirstComponent />
+					</div>, document.getElementById('first-react-component'));
+
+	</script>
+</body>
+</html>
