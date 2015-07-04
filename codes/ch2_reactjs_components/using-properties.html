@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Using Properties</title>
+</head>
+<body>
+
+	<div id="first-react-component"></div>
+
+	<script type="text/javascript" src="../libs/reactjs.min.js"></script>
+	<script type="text/javascript" src="../libs/JSXTransformer.js"></script>
+
+	<script type="text/jsx">
+		var MyFirstComponent = React.createClass({
+			render: function() {
+				return (
+					<div>
+						<h1>{this.props.text}</h1>
+						<p>{this.props.children}</p>
+					</div>
+				);
+			}
+		});
+
+		// React.render(<MyFirstComponent />, document.getElementById('first-react-component'));
+
+		React.render(<div>
+						<MyFirstComponent text="Hello World" /> 
+						<MyFirstComponent text="Welcome to Reactjs">
+							Welcome Ashwin, Reachjs is developed by Facebook
+						</MyFirstComponent>
+						<MyFirstComponent text="Virtual DOM is Awesome" />
+					</div>, document.getElementById('first-react-component'));
+
+	</script>
+</body>
+</html>
