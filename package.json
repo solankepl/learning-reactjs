@@ -1,0 +1,15 @@
+{
+  "name": "learning-reactjs",
+  "version": "0.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hegdeashwin/learning-reactjs.git"
+  },
+  "author": "Ashwin Hegde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hegdeashwin/learning-reactjs/issues"
+  },
+  "homepage": "https://github.com/hegdeashwin/learning-reactjs#readme"
+}
